@@ -5,7 +5,533 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css";>
+    
+    <style>
+      h1
+      {
+    color: rgb(88, 186, 68);
+    text-align: left;
+    font-size: 600%;
+    margin-left: 30px;
+}
+
+
+body{
+    background-image: url(https://images.pexels.com/photos/4466492/pexels-photo-4466492.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4466492.jpg&fm=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+   
+
+        *{
+            padding: 0%;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        nav{
+            background: #145d12;
+            height: 70px;
+            width: 100%;
+        }
+        label.logo
+        {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0  100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0  5px;
+        }
+        nav ul li a {
+            color:white;
+            font-size: 18px;
+            padding: 7px 13px;
+            border-radius: 3px;
+           
+             text-transform: uppercase;
+        }
+
+        .feedback{
+            line-height: 2;
+            color: #f9f9f9;
+            background-color: #145d12;
+
+
+        }
+
+        a.active,a:hover{
+            background-color:1b9bff;
+            transition: .5s;
+        }
+        
+        .dropdown{
+            display: none;
+        }
+       ul li:hover .dropdown{
+            background-color: #145d12;
+            position: absolute;
+            display: block;
+             margin-top: -10px;
+            padding-top: -15px;
+            margin-left: 0.29cm;
+
+        }
+        
+
+
+        .dropdown ul { 
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown ul li{
+            display: block;
+            line-height: 2;
+            color: #f9f9f9;
+        
+        }
+
+
+
+
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        div img{
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(25, 27, 25);
+            border-radius: 13px;
+            box-shadow: 4px 7px 7px 0 black ;
+            margin: 10px;
+            transition: 400ms;
+
+        }
+        .card{
+            width: 250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        div p{
+            font-weight: bold;
+        }
+        .container{
+            width: 250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+         .plant{
+          width: 250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .box
+        {
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p {
+            font-weight: bold;
+        }
+         .tree
+         {
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p {
+            font-weight: bold;
+        }
+        .flower
+        {
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p {
+            font-weight: bold;
+        }
+        .mogra{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .rose{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .madhumalti{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .madhukamni{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .sadabahar{
+
+        width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .aprajita{
+
+        width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+
+        .Lily{
+           
+        width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        } 
+        .Mint
+        {
+            
+        width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+
+        .Kalanchoe{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .Syngonium{
+           width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        } 
+         
+        .Purple plant{
+            width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .parijat{
+          width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .marigold{
+  width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+
+        .Tulsi{
+             width:250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .Aloevera{
+            width: 250px;
+             background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow
+           : 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .mother{
+    width: 250px;
+             background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow
+           : 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        
+        .petunia{
+ width: 250px;
+             background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow
+           : 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        .leaf{
+             width: 250px;
+             background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow
+           : 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p{
+            font-weight: bold;
+        }
+        
+        
+        
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .detail{
+            text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder;
+        }
+        .detail h2 {
+
+            color: rgb(9, 27, 9);
+            text-decoration:underline double  rgb(9, 27, 9);
+            font-size: 80px;
+        }
+        .detail h3
+        {
+            color: darkolivegreen;
+            text-decoration: line-through darkolivegreen;
+            font-size: 70px;
+        }
+        .detail p{
+            font-size: 40px;
+            color:rgb(40, 81, 12);
+            margin: 30px;
+            padding: 50px;
+        }
+
+         .connect{
+            font-size: 40px;
+            color: rgb(10, 10, 10);
+
+
+         }
+ 
+    </style>
   </head>
   <body>
     
